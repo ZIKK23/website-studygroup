@@ -21,6 +21,18 @@ body {
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
 
+/* Prevent Safari from hiding off-screen elements */
+/* This forces the browser to always keep content rendered */
+main,
+section,
+nav,
+.fixed,
+[class*="backdrop-blur"],
+[class*="blur-"] {
+  content-visibility: visible !important;
+  contain-intrinsic-size: auto;
+}
+
 @keyframes scroll {
   from {
     transform: translateX(0);
@@ -33,3 +45,4 @@ body {
 .animate-scroll {
   animation: scroll 100s linear infinite;
 }
+
