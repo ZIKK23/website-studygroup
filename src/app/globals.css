@@ -21,20 +21,24 @@ body {
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
 
-/* Prevent Safari from hiding off-screen elements */
-/* Note: We avoid applying transform to nav to preserve fixed positioning */
-main,
-section,
-div:not(.fixed):not([class*="top-"]) {
-  content-visibility: visible !important;
-  contain-intrinsic-size: auto;
-}
-
-/* Force GPU rendering for scrollable content, but NOT on fixed elements */
-main > *,
-section > * {
+/* Force all scrollable content to stay rendered, EXCEPT nav */
+body > main *:not(nav):not(nav *) {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
+}
+
+/* Ensure navbar stays fixed despite transforms */
+nav[class*="fixed"] {
+  -webkit-transform: none !important;
+  transform: none !important;
+  position: fixed !important;
+}
+
+/* Content visibility for all major containers */
+main,
+section,
+div {
+  content-visibility: visible !important;
 }
 
 @keyframes scroll {
