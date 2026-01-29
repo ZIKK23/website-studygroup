@@ -97,12 +97,12 @@ export default function UiUxDesignPage() {
                 </div>
 
                 <div className={cn(
-                    "grid transition-[grid-template-rows] duration-500 ease-in-out",
+                    "grid transition-[grid-template-rows] duration-500 ease-in-out will-change-[grid-template-rows]",
                     isInfoExpanded ? "grid-rows-[1fr] opacity-100 mt-4" : "grid-rows-[0fr] opacity-0 mt-0"
                 )}>
                     <div className="overflow-hidden">
                         <p className="text-lg text-black max-w-2xl leading-relaxed pt-2">
-                            Learn how to turn user problems into usable digital solutions by doing users researches, designing intuitive flows, and testing interfaces to improve real user experience.
+                             Learn how to turn user problems into usable digital solutions by doing users researches, designing intuitive flows, and testing interfaces to improve real user experience.
                         </p>
 
                         <div className="h-px w-full bg-linear-to-r from-transparent via-[#311081D9]/20 to-transparent my-10"></div>
@@ -115,7 +115,7 @@ export default function UiUxDesignPage() {
                             <div className="flex flex-wrap gap-4">
                                 {toolsStack.map((item, idx) => (
                                     <div key={idx} className="flex flex-col items-center gap-2 group">
-                                        <div className="w-14 h-14 rounded-2xl bg-white/50 border border-white/60 shadow-sm flex items-center justify-center text-[#311081D9] transition-transform group-hover:scale-105 group-hover:shadow-md backdrop-blur-sm overflow-hidden">
+                                        <div className="w-14 h-14 rounded-2xl bg-white/80 border border-white/60 shadow-sm flex items-center justify-center text-[#311081D9] transition-transform group-hover:scale-105 group-hover:shadow-md overflow-hidden">
                                             {/* Logic to choose Image or Icon */}
                                             {item.image ? (
                                                 <Image 
@@ -185,10 +185,10 @@ export default function UiUxDesignPage() {
 
                                 {/* Phase Content (Collapsible) */}
                                 <div className={cn(
-                                    "grid transition-[grid-template-rows] duration-500 ease-in-out",
+                                    "grid transition-[grid-template-rows] duration-500 ease-in-out will-change-[grid-template-rows]",
                                     isActive ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
                                 )}>
-                                    <div className="overflow-hidden bg-white/30">
+                                    <div className="overflow-hidden bg-white/50">
                                         <div className="h-px w-full bg-linear-to-r from-transparent via-[#311081D9]/10 to-transparent"></div>
                                         <div className="p-6 md:p-8 pt-4">
                                             <ul className="space-y-4">
