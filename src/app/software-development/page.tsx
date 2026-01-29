@@ -66,7 +66,7 @@ export default function SoftwareDevelopmentPage() {
         </Link>
         
         {/* Header Section (Collapsible Info Box) */}
-        <div className="relative backdrop-blur-xl bg-white/30 border border-white/40 shadow-xl rounded-3xl overflow-hidden transition-all duration-500 ease-in-out">
+        <div className="relative bg-white/95 md:bg-white/30 md:backdrop-blur-xl border border-white/40 shadow-xl rounded-3xl overflow-hidden transition-all duration-500 ease-in-out">
              {/* Subtle shine effect */}
              <div className="absolute inset-0 bg-linear-to-br from-white/40 via-transparent to-transparent opacity-50 pointer-events-none"></div>
 
@@ -194,7 +194,7 @@ export default function SoftwareDevelopmentPage() {
                 {syllabus.map((week, idx) => (
                     <div key={idx} className="w-full relative group">
                         <div className="absolute inset-0 bg-[#311081D9] rounded-xl blur opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
-                        <div className="relative w-full bg-white/40 backdrop-blur-md border border-white/50 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center gap-6">
+                        <div className="relative w-full bg-white/95 md:bg-white/40 md:backdrop-blur-md border border-white/50 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex items-center gap-6">
                             <div className="shrink-0 px-4 py-2 rounded-full bg-[#00D97A]/20 text-[#006e3e] text-sm font-bold">
                                 Week {week.week}
                             </div>

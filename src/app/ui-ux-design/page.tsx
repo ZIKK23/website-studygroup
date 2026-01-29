@@ -62,10 +62,10 @@ export default function UiUxDesignPage() {
 
   return (
     <div className="min-h-screen text-gray-800 p-6 md:p-12 font-sans relative overflow-hidden">
-      {/* Background Decor - Purple Theme */}
+      {/* Background Decor - Purple Theme (Lighter blur on mobile) */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
-          <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] rounded-full bg-[#311081D9]/10 blur-3xl"></div>
-          <div className="absolute bottom-[10%] left-[-10%] w-[600px] h-[600px] rounded-full bg-[#00D97A]/10 blur-3xl"></div>
+          <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] rounded-full bg-[#311081D9]/10 blur-xl md:blur-3xl"></div>
+          <div className="absolute bottom-[10%] left-[-10%] w-[600px] h-[600px] rounded-full bg-[#00D97A]/10 blur-xl md:blur-3xl"></div>
       </div>
 
       <Navbar />
@@ -79,7 +79,7 @@ export default function UiUxDesignPage() {
         </Link>
         
         {/* Header Section (Collapsible Info Box) */}
-        <div className="relative backdrop-blur-md bg-white/50 border border-white/40 shadow-xl rounded-3xl overflow-hidden transition-colors duration-300">
+        <div className="relative bg-white/95 md:bg-white/50 md:backdrop-blur-md border border-white/40 shadow-xl rounded-3xl overflow-hidden transition-colors duration-300">
              {/* Subtle shine effect */}
              <div className="absolute inset-0 bg-linear-to-br from-white/40 via-transparent to-transparent opacity-50 pointer-events-none"></div>
 
@@ -156,7 +156,7 @@ export default function UiUxDesignPage() {
                                 isActive ? "opacity-10" : "opacity-0 group-hover:opacity-5"
                             )}></div>
                             
-                            <div className="relative w-full bg-white/40 backdrop-blur-md border border-white/50 rounded-2xl shadow-sm overflow-hidden transition-all duration-300">
+                            <div className="relative w-full bg-white/95 md:bg-white/40 md:backdrop-blur-md border border-white/50 rounded-2xl shadow-sm overflow-hidden transition-all duration-300">
                                 {/* Phase Header (Clickable) */}
                                 <div 
                                     className="p-6 md:p-8 flex justify-between items-center cursor-pointer hover:bg-white/40 transition-colors"
