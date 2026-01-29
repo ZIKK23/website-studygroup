@@ -84,7 +84,7 @@ export default function SoftwareDevelopmentPage() {
                 </div>
 
                 <div className={cn(
-                    "grid transition-[grid-template-rows] duration-500 ease-in-out",
+                    "grid transition-[grid-template-rows] duration-0 md:duration-500 ease-in-out will-change-[grid-template-rows] transform-gpu",
                     isInfoExpanded ? "grid-rows-[1fr] opacity-100 mt-4" : "grid-rows-[0fr] opacity-0 mt-0"
                 )}>
                     <div className="overflow-hidden">
