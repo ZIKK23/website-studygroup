@@ -61,7 +61,7 @@ export default function UiUxDesignPage() {
   ];
 
   return (
-    <div className="min-h-screen text-gray-800 p-6 md:p-12 font-sans relative overflow-hidden transition-all duration-500 ease-in-out">
+    <div className="min-h-screen text-gray-800 p-6 md:p-12 font-sans relative overflow-hidden">
       {/* Background Decor - Purple Theme */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
           <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] rounded-full bg-[#311081D9]/10 blur-3xl"></div>
@@ -70,7 +70,7 @@ export default function UiUxDesignPage() {
 
       <Navbar />
 
-      <div className="max-w-5xl mx-auto space-y-8 pt-22 transition-all duration-500">
+      <div className="max-w-5xl mx-auto space-y-8 pt-22">
         
         {/* Back Button */}
         <Link href="/" className="inline-flex items-center gap-2 text-[#311081D9] font-medium hover:underline transition-all group">
@@ -79,7 +79,7 @@ export default function UiUxDesignPage() {
         </Link>
         
         {/* Header Section (Collapsible Info Box) */}
-        <div className="relative backdrop-blur-xl bg-white/30 border border-white/40 shadow-xl rounded-3xl overflow-hidden transition-all duration-500 ease-in-out">
+        <div className="relative backdrop-blur-md bg-white/50 border border-white/40 shadow-xl rounded-3xl overflow-hidden transition-colors duration-300">
              {/* Subtle shine effect */}
              <div className="absolute inset-0 bg-linear-to-br from-white/40 via-transparent to-transparent opacity-50 pointer-events-none"></div>
 
