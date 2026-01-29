@@ -6,12 +6,12 @@ export function RouteMap() {
       <div className="container mx-auto px-6 lg:px-12">
         {/* Section Header */}
         <div className="mb-12">
-          <div className="flex items-center gap-12">
-            <div className="h-px flex-1 bg-gray-300"></div>
-            <h2 className="shrink-0 text-3xl font-bold tracking-tight text-[#1C1629] sm:text-4xl">
+          <div className="flex items-center gap-3 sm:gap-12">
+            <div className="h-px min-w-[20px] flex-1 bg-gray-300"></div>
+            <h2 className="text-xl font-bold tracking-tight text-[#1C1629] sm:text-4xl text-center">
               Route Map Study Group
             </h2>
-            <div className="h-px flex-1 bg-gray-300"></div>
+            <div className="h-px min-w-[20px] flex-1 bg-gray-300"></div>
           </div>
           <p className="mt-4 text-center text-lg text-muted-foreground">
             From Open Recruitment to Awarding: The complete timeline of your study group experience.

@@ -22,7 +22,9 @@ export function Hero() {
           {/* Single Action Button */}
           <div className="flex flex-col items-center gap-6 sm:flex-row">
             <Link
-              href="#registration-form"
+              href="https://forms.gle/yVmL7HXrkUNdJE6Y7"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group relative inline-flex items-center justify-center rounded-full bg-white p-1.5 shadow-xl shadow-purple-500/30 transition-all hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/40 active:scale-95"
             >
               <div className="flex min-w-[200px] items-center justify-center gap-2 rounded-full bg-linear-to-r from-[#6366f1] to-[#a855f7] px-8 py-3.5 text-lg font-semibold text-white transition-all group-hover:brightness-110">
