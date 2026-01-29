@@ -21,16 +21,23 @@ body {
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
 
-/* Prevent Safari from hiding off-screen elements */
-/* This forces the browser to always keep content rendered */
+/* Prevent Safari from hiding off-screen elements - STRONGER FIX */
+/* Forces WebKit to paint the element and its layout even if off-screen */
+* {
+  -webkit-transform: translateZ(0);
+}
+
 main,
 section,
 nav,
-.fixed,
+div,
 [class*="backdrop-blur"],
 [class*="blur-"] {
   content-visibility: visible !important;
   contain-intrinsic-size: auto;
+  /* Ensure painting happens */
+  transform: translateZ(0); 
+  -webkit-font-smoothing: antialiased;
 }
 
 @keyframes scroll {
