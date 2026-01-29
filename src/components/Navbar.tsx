@@ -52,7 +52,7 @@ export function Navbar() {
 
   return (
     <>
-      <nav className="fixed top-6 left-1/2 z-50 -translate-x-1/2 w-[90%] max-w-5xl rounded-full border border-white/20 bg-white/95 md:bg-white/90 backdrop-blur-sm md:backdrop-blur-xl shadow-lg shadow-black/5 transition-all">
+      <nav className="fixed top-6 left-1/2 z-[110] -translate-x-1/2 w-[90%] max-w-5xl rounded-full border border-white/20 bg-white/95 md:bg-white/90 backdrop-blur-sm md:backdrop-blur-xl shadow-lg shadow-black/5 transition-all">
         <div className="flex h-14 items-center justify-between px-2 pl-6 pr-2">
           {/* Left: Logo */}
           <Link 
