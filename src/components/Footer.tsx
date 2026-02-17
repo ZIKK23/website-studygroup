@@ -22,7 +22,7 @@ export function Footer() {
               Research lab focused on UI/UX, Software Development, IoT, and Project Management.
             </p>
             <p className="text-sm text-gray-500">
-              &copy; {new Date().getFullYear()} EISD Laboratory.
+              &copy; {new Date().getFullYear()} EISD Laboratory
             </p>
           </div>
 
