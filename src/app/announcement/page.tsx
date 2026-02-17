@@ -105,16 +105,18 @@ function ResultsContent() {
 
 export default function AnnouncementPage() {
   return (
-    <main className="relative min-h-screen w-full overflow-x-hidden bg-[#FDFDFD] text-foreground">
-      <Navbar />
-      <Suspense fallback={
-            <div className="flex h-[50vh] w-full items-center justify-center">
-              <div className="h-8 w-8 animate-spin rounded-full border-4 border-primary border-t-transparent"></div>
-            </div>
-      }>
-          <ResultsContent />
-      </Suspense>
-      <Footer />
-    </main>
+    <div className="min-h-screen relative overflow-x-hidden">
+      <main className="relative min-h-screen w-full bg-[#FDFDFD] text-foreground">
+        <Navbar />
+        <Suspense fallback={
+              <div className="flex h-[50vh] w-full items-center justify-center">
+                <div className="h-8 w-8 animate-spin rounded-full border-4 border-primary border-t-transparent"></div>
+              </div>
+        }>
+            <ResultsContent />
+        </Suspense>
+        <Footer />
+      </main>
+    </div>
   );
 }
