@@ -6,7 +6,7 @@ const divisions = [
   {
     name: "Software Development",
     description: "Building end-to-end web applications, from frontend and backend logic to deployment.",
-    image: "/images/softdev.png",
+    image: "/images/softdev.webp",
     imageSize: 40,
     id: "software-development",
     color: "bg-blue-500/10 text-blue-600",
@@ -15,7 +15,7 @@ const divisions = [
   {
     name: "UI/UX Design",
     description: "Turning user problems into intuitive digital solutions through research, design, and testing.",
-    image: "/images/uiux.png",
+    image: "/images/uiux.webp",
     imageSize: 40,
     id: "ui-ux-design",
     color: "bg-blue-500/10 text-blue-600",
@@ -24,8 +24,8 @@ const divisions = [
   {
     name: "Technopreneur",
     description: "Validating ideas and turning them into viable digital products through strategy and execution.",
-    image: "/images/techno.png",
-    imageSize: 30,
+    image: "/images/techno.webp",
+    imageSize: 42,
     id: "technopreneur",
     color: "bg-blue-500/10 text-blue-600",
     href: "/technopreneur",
@@ -33,8 +33,8 @@ const divisions = [
   {
     name: "Intelligence System",
     description: "Designing and building IoT-based solutions from sensor data to web and business integration.",
-    image: "/images/is.png",
-    imageSize: 40,
+    image: "/images/is.webp",
+    imageSize: 42,
     id: "intelligence-system",
     color: "bg-blue-500/10 text-blue-600",
     href: "/intelligence-system",

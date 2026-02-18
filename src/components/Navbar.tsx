@@ -57,7 +57,7 @@ export function Navbar() {
 
   return (
     <>
-      <nav className="fixed top-6 left-1/2 `z-110` -translate-x-1/2 w-[90%] max-w-5xl rounded-full border border-white/20 bg-white/95 md:bg-white/90 backdrop-blur-sm md:backdrop-blur-xl shadow-lg shadow-black/5 transition-all">
+      <nav className="fixed top-6 left-1/2 z-110 -translate-x-1/2 w-[90%] max-w-5xl rounded-full border border-white/20 bg-white/95 md:bg-white/90 backdrop-blur-sm md:backdrop-blur-xl shadow-lg shadow-black/5 transition-all">
         <div className="flex h-14 items-center justify-between px-2 pl-6 pr-2">
           {/* Left: Logo */}
           <Link 
@@ -144,7 +144,7 @@ export function Navbar() {
 
       {/* Mobile Menu Overlay */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 `z-100` bg-background/95 backdrop-blur-sm pt-24 md:hidden">
+        <div className="fixed inset-0 z-100 bg-background/95 backdrop-blur-sm pt-24 md:hidden">
           <div className="flex flex-col items-center gap-6 p-6 pointer-events-auto">
             {navLinks.map((link) => {
                const isActive = pathname === link.href;
