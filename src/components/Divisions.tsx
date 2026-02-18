@@ -1,11 +1,13 @@
-import { Terminal, Palette, Briefcase, Brain, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 const divisions = [
   {
     name: "Software Development",
     description: "Building end-to-end web applications, from frontend and backend logic to deployment.",
-    icon: Terminal,
+    image: "/images/softdev.png",
+    imageSize: 40,
     id: "software-development",
     color: "bg-blue-500/10 text-blue-600",
     href: "/software-development",
@@ -13,25 +15,28 @@ const divisions = [
   {
     name: "UI/UX Design",
     description: "Turning user problems into intuitive digital solutions through research, design, and testing.",
-    icon: Palette,
+    image: "/images/uiux.png",
+    imageSize: 40,
     id: "ui-ux-design",
-    color: "bg-purple-500/10 text-purple-600",
+    color: "bg-blue-500/10 text-blue-600",
     href: "/ui-ux-design",
   },
   {
     name: "Technopreneur",
     description: "Validating ideas and turning them into viable digital products through strategy and execution.",
-    icon: Briefcase,
+    image: "/images/techno.png",
+    imageSize: 30,
     id: "technopreneur",
-    color: "bg-orange-500/10 text-orange-600",
+    color: "bg-blue-500/10 text-blue-600",
     href: "/technopreneur",
   },
   {
     name: "Intelligence System",
     description: "Designing and building IoT-based solutions from sensor data to web and business integration.",
-    icon: Brain,
+    image: "/images/is.png",
+    imageSize: 40,
     id: "intelligence-system",
-    color: "bg-green-500/10 text-green-600",
+    color: "bg-blue-500/10 text-blue-600",
     href: "/intelligence-system",
   },
 ];
@@ -64,7 +69,7 @@ export function Divisions() {
             >
               {/* Icon */}
               <div className={`mb-6 flex h-14 w-14 items-center justify-center rounded-xl ${div.color} transition-transform duration-300 group-hover:scale-110`}>
-                <div.icon className="h-7 w-7" />
+                <Image src={div.image} alt={div.name} width={div.imageSize} height={div.imageSize} />
               </div>
 
               {/* Content */}

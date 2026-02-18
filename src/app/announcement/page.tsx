@@ -84,12 +84,12 @@ function ResultsContent() {
 
              {/* 3. Actions - Only show Join Group for Passed students */}
              {result?.status === "Passed" ? (
-                  <div className="flex flex-col gap-4 w-full sm:w-auto sm:flex-row justify-center mt-8">
+                  <div className="flex justify-center mt-8">
                         <a
                             href={WA_LINKS.general}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 shadow-sm hover:shadow-md w-full sm:w-auto sm:min-w-[240px] sm:px-8 sm:py-3.5 sm:text-base bg-linear-to-r from-[#6366f1] to-[#a855f7] hover:brightness-110 shadow-purple-500/30 hover:shadow-purple-500/40"
+                            className="inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 shadow-sm hover:shadow-md sm:min-w-[240px] sm:px-8 sm:py-3.5 sm:text-base bg-linear-to-r from-[#6366f1] to-[#a855f7] hover:brightness-110 shadow-purple-500/30 hover:shadow-purple-500/40"
                         >
                             <MessageCircle className="h-5 w-5 fill-white/20" />
                             Join Group
